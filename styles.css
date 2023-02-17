@@ -1,0 +1,1659 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&family=Josefin+Sans:ital,wght@0,300;0,400;1,600&family=Libre+Franklin:ital,wght@0,300;0,600;1,600;1,700&family=Manrope:wght@500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+body{
+    width: 100vw;
+    height: 100vh;
+    font-family: sans-serif,"Josefin Sans";
+    font-size: 16px;
+    overflow-x: hidden;
+
+    background-repeat: no-repeat;
+}
+:root{
+--DesaturatedRed: hsl(0, 36%, 70%);
+---DarkGrayishRed:hsl(0, 6%, 24%);
+---green:Linear,135deg,(from hsl(0, 0%, 100%), to hsl(0, 100%, 98%));
+---blue:Linear, 135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%);
+---SoftRed: hsl(0, 93%, 68%;);
+
+}
+.imagee{
+    margin-left: 10rem;
+    margin-top: 4rem;
+    display: none;
+}
+.flex-container{
+    display: flex;
+    flex-direction: row;
+   
+}
+.div-1{
+    width:83%
+    
+}
+
+
+.div-4{
+    background-image: url(./images/bg-pattern-desktop.svg);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+}
+.div-2{
+    width: 50%;
+    color: green;
+  
+}
+.div-3{
+    background-image: url(./images/hero-desktop.jpg);
+      width: 100%;
+    background-size: cover;
+    background-position: center center;
+    height:100vh;
+}
+.image{
+    margin-left: 10rem;
+    margin-top: 4rem;
+}
+h1{
+    margin-left: 10rem;
+    margin-top: 5rem;
+    font-weight:600 ;
+    font-size: 4rem;
+    text-transform: uppercase;
+    line-height: 5rem;
+    letter-spacing: 1rem;
+    color: hsl(0, 6%, 24%);
+}
+.color{
+    font-weight: 300;
+    color: hsl(0, 36%, 78%);
+}
+p{
+    margin-left: 10rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+    color: hsl(0, 36%, 70%);
+    width: 60%;
+    
+}
+.flexa-container{
+    display: flex;
+    flex-direction: row;
+    margin-left: 10rem;
+    margin-top: 2rem;
+
+
+}
+.input-control input{
+    width: 23rem;
+    height: 3.2rem;
+    border-radius: 1.8rem;
+    border: 2px solid hsl(0, 80%, 86%);
+    display: flex;
+    font-size: larger;
+
+}
+.input-control input:focus{
+    outline: 0;
+}
+button{
+    width: 6rem;
+    height: 3.2rem;
+    border-radius: 1.8rem;
+    margin-left: -3rem;
+    background-image:linear-gradient(135deg,hsl(0, 80%, 86%),  hsl(0, 74%, 74%));
+   
+    border: none;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    transition-timing-function: ease;
+    margin-bottom: 1rem;
+
+
+}
+button:hover{
+    background-image:linear-gradient(135deg,hsl(0, 80%, 86%),  hsl(0, 80%, 86%)) ;
+}
+
+input::placeholder{
+    color: hsl(0, 36%, 70%);
+    padding: 1.4rem;
+    margin-right: 1rem;
+    
+}
+
+  .imager{
+    position: absolute;
+    top: 34.7rem;
+    left: 28rem;
+    visibility: hidden;
+
+  }
+.error .imager{
+    visibility: visible;
+}
+
+  .error{
+    color:hsl(0, 93%, 68%);
+    width: 100%;
+    
+  padding-left: 1.2rem;
+  font-size: 1rem;
+   margin-left: -1rem;
+
+   
+}
+.success {
+    color:hsl(0, 80%, 86%) ;
+    
+}
+.error input{
+    border: 2px solid hsl(0, 93%, 68%);
+}
+@media screen and (min-width:1440px) {
+    .div-3{
+        background-image: url(./images/hero-desktop.jpg);
+          width: 100%;
+        background-size: cover;
+        background-position: center;
+        height:100vh;
+    }
+}
+@media screen and (min-width:1300px)and (max-width:1440px) {
+    .div-3{
+        background-image: url(./images/hero-desktop.jpg);
+          width: 100%;
+        background-size: cover;
+        background-position: center;
+        height:100vh;
+    }
+    .input-control input{
+        width: 23rem;
+        height: 3.2rem;
+        border-radius: 1.8rem;
+        border: 2px solid hsl(0, 80%, 86%);
+        padding-left: 0.1rem;
+        
+    
+    }
+    .error{
+        color:hsl(0, 93%, 68%);
+        width: 100%;
+      font-size: 0.8rem;  
+
+    }
+ .error .input-control{
+        position: fixed;
+        margin-left: -3rem;
+    }
+    .div-4{
+        background-image: url(./images/bg-pattern-desktop.svg);
+        height: 100vh;
+        width: 100%;
+        background-size: cover;
+    }
+    .image{
+        margin-left: 10rem;
+        margin-top: 5rem;
+    }
+    h1{
+        margin-left: 10rem;
+        margin-top:9rem;
+        font-weight:600 ;
+        font-size: 4rem;
+        text-transform: uppercase;
+        line-height: 5rem;
+        letter-spacing: 1rem;
+    }
+    p{
+    margin-left: 10rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+    color: hsl(0, 36%, 70%);
+    margin-top: 1rem;
+    
+}
+.imager{
+    position: absolute;
+    top: 39.7rem;
+    left: 28rem;
+    visibility: hidden;
+
+  }
+  .error .err-m{
+    padding-top: 0.7rem;
+    padding-left: 1rem;
+    
+}
+}
+@media screen and (min-width:1290px)and (max-width:1300px) {
+    .div-1{
+        width:60%
+        
+    }
+    .image{
+        margin-left: 7rem;
+        margin-top: 5rem;
+    }
+    h1{
+        margin-left: 7rem;
+        margin-top:9rem;
+        font-weight:600 ;
+        font-size: 4rem;
+        text-transform: uppercase;
+        line-height: 5rem;
+        letter-spacing: 1rem;
+    }
+    p{
+   margin-left: 7rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+    color: hsl(0, 36%, 70%);
+    margin-top: 1rem;
+    
+}
+.flexa-container{
+    display: flex;
+    flex-direction: row;
+    margin-left: 7rem;
+    margin-top: 2rem;
+
+
+}
+.imager{
+    position: absolute;
+    top: 39.7rem;
+    left: 25rem;
+    visibility: hidden;
+
+  }
+  .error .err-m{
+    padding-top: 0.7rem;
+    padding-left: 1rem;
+    font-size: 1.2rem;
+    
+}
+.error .err-m{
+    padding-top: 0.7rem;
+    padding-left: 1rem;
+    
+}
+}
+@media screen and (max-width:1281px) {
+    .div-1{
+        width:70%
+        
+    }
+    h1{
+        margin-left: 10rem;
+        margin-top:6rem;
+        font-weight:600 ;
+        font-size: 4rem;
+        text-transform: uppercase;
+        line-height: 5rem;
+        letter-spacing: 1rem;
+    }
+    .error .err-m{
+        padding-top: 0.7rem;
+        padding-left: 1rem;
+        
+    }
+   
+}
+@media screen and (max-width:1271px) {
+    .error .err-m{
+        padding-top: 0.7rem;
+        padding-left: 1rem;
+    
+        
+    }
+    
+}
+@media screen and (max-width:1200px) {
+    .image{
+        margin-left: 7rem;
+        margin-top: 3rem;
+    }
+    h1{
+        margin-left: 7rem;
+        margin-top:7rem;
+        font-weight:600 ;
+        font-size: 4rem;
+        text-transform: uppercase;
+        line-height: 5rem;
+        letter-spacing: 1rem;
+    }
+    p{
+   margin-left: 7rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+    color: hsl(0, 36%, 70%);
+    margin-top: 1rem;
+    
+}
+.flexa-container{
+    display: flex;
+    flex-direction: row;
+    margin-left: 7rem;
+    margin-top: 2rem;
+
+
+}
+.imager{
+    position: absolute;
+    top: 35.7rem;
+    left: 25rem;
+    visibility: hidden;
+
+  }
+.div-1{
+    width:65%
+    
+}
+}
+@media screen and (max-width:1101px) {
+    .div-1{
+        width:70%
+        
+    }
+    
+}
+@media screen and (max-width:1000px) {
+    .div-1{
+        width:62%
+        
+    }
+    .image{
+        margin-left: 6rem;
+        margin-top: 3rem;
+    }
+    h1{
+        margin-left: 6rem;
+        margin-top:7rem;
+        font-weight:600 ;
+        font-size: 4rem;
+        text-transform: uppercase;
+        line-height: 5rem;
+        letter-spacing: 1rem;
+    }
+    p{
+   margin-left: 6rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+    color: hsl(0, 36%, 70%);
+    margin-top: 1rem;
+    
+}
+.flexa-container{
+    display: flex;
+    flex-direction: row;
+    margin-left: 6rem;
+    margin-top: 2rem;
+
+
+}
+.imager{
+    position: absolute;
+    top: 35.7rem;
+    left: 24rem;
+    visibility: hidden;
+
+  }
+}
+@media screen and (max-width:1062px) {
+    .imager{
+        position: absolute;
+        top: 35.7rem;
+        left: 24rem;
+        visibility: hidden;
+    
+      }
+}
+@media screen and (max-width:976px) {
+    .image{
+        margin-left: 5rem;
+        margin-top: 3rem;
+    }
+    h1{
+        margin-left: 5rem;
+        margin-top:7rem;
+        font-weight:600 ;
+        font-size: 4rem;
+        text-transform: uppercase;
+        line-height: 5rem;
+        letter-spacing: 1rem;
+    }
+    p{
+   margin-left: 5rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+    color: hsl(0, 36%, 70%);
+    margin-top: 1rem;
+    
+}
+.flexa-container{
+    display: flex;
+    flex-direction: row;
+    margin-left: 5rem;
+    margin-top: 2rem;
+
+
+}
+.imager{
+    position: absolute;
+    top: 35.7rem;
+    left: 23rem;
+    visibility: hidden;
+
+  }
+    
+}
+@media screen and (max-width:935px) {
+    .image{
+        margin-left: 4rem;
+        margin-top: 3rem;
+    }
+    h1{
+        margin-left: 4rem;
+        margin-top:7rem;
+        font-weight:600 ;
+        font-size: 4rem;
+        text-transform: uppercase;
+        line-height: 5rem;
+        letter-spacing: 1rem;
+    }
+    p{
+   margin-left: 4rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+    color: hsl(0, 36%, 70%);
+    margin-top: 1rem;
+    
+}
+.flexa-container{
+    display: flex;
+    flex-direction: row;
+    margin-left: 4rem;
+    margin-top: 2rem;
+
+
+}
+.imager{
+    position: absolute;
+    top: 35.7rem;
+    left: 24rem;
+    visibility: hidden;
+
+  }
+    
+}
+@media screen and (max-width:935px) {
+    .imager{
+        position: absolute;
+        top: 35.7rem;
+        left: 22rem;
+        visibility: hidden;
+    
+      }
+    
+}
+@media screen and (max-width:900px) {
+    .div-1{
+        width:70%
+        
+    }
+}
+@media screen and (max-width:830px) {
+    .flex-container{
+        display: flex;
+        flex-direction: column-reverse;
+        
+    }
+    .imagee{
+        margin-left: 4rem;
+        margin-top: 4rem;
+        display: block;
+    }
+    .image{
+        margin-left: 10rem;
+        margin-top: 4rem;
+        display: none;
+    }
+    .div-1{
+        width:100%;
+        height: 50%;
+        
+    }
+    
+    .soon{
+        padding-left: 4rem;
+    }
+    .div-4{
+        background-image: none;
+     
+        background-image: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+        height: 45%;
+        width: 100%;
+        background-size: cover;
+    }
+    .div-2{
+        width: 100%;
+        height: 50%;
+        margin-top: 4rem;
+      
+    }
+    .div-3{
+        background-image: url(./images/hero-mobile.jpg);
+          width:100%;
+          height: 25rem;
+        background-size: cover;
+        background-position: center center;
+    }
+    h1{
+        margin-left: 7rem;
+        margin-top: 5rem;
+        font-weight:600 ;
+        font-size: 7rem;
+        text-transform: uppercase;
+        line-height: 8rem;
+        letter-spacing: 1rem;
+        color: hsl(0, 6%, 24%);
+    }
+    .color{
+        font-weight: 300;
+        color: hsl(0, 36%, 78%);
+        margin-left: 4rem;
+    }
+    p{
+        margin-left: 7rem;
+        line-height: 2.5rem;
+        font-weight: 400;
+        color: hsl(0, 36%, 70%);
+        font-size: 1.8rem;
+        width: 76%;
+
+        
+}
+.lainch{
+    text-align: center;
+    padding-left: 13rem;
+}
+.input-control input{
+    width: 31rem;
+    height: 4.7rem;
+    border-radius: 2.5rem;
+    border: 2px solid hsl(0, 80%, 86%);
+    display: flex;
+    padding-left: 2rem;
+
+}
+.flexa-container{
+    display: flex;
+    flex-direction: row;
+    margin-left: 7rem;
+    margin-top: 3rem;
+}
+button{
+    width: 6rem;
+    height: 4.7rem;
+    border-radius: 2.5rem;
+    margin-left: -4rem;
+    background-image:linear-gradient(135deg,hsl(0, 80%, 86%),  hsl(0, 74%, 74%));
+   
+    border: none;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    transition-timing-function: ease;
+    margin-bottom: 3rem;
+
+
+}
+.imager{
+    position: absolute;
+    top: 79.8rem;
+    left: 32rem;
+    visibility: hidden;
+
+  }
+  input::placeholder{
+    color: hsl(0, 36%, 70%);
+    padding: 1.4rem;
+    font-size: 1.2rem;
+
+    
+}
+.error{
+    font-size: 1.rem;
+}
+}
+@media screen and (max-width:787px) {
+    .imager{
+        position: absolute;
+        top: 79.8rem;
+        left: 32rem;
+        visibility: hidden;
+    
+      }
+      p{
+        margin-left: 7rem;
+        line-height: 2.5rem;
+        font-weight: 400;
+        color: hsl(0, 36%, 70%);
+        font-size: 1.8rem;
+        width: 78%;
+
+        
+}
+}
+@media screen and (max-width:766px){
+    p{
+        margin-left: 7rem;
+        line-height: 2.5rem;
+        font-weight: 400;
+        color: hsl(0, 36%, 70%);
+        font-size: 1.8rem;
+        width: 80%;
+
+        
+}
+}
+@media screen  and (max-width:759px){
+    p{
+        margin-left: 5.5rem;
+        line-height: 2.5rem;
+        font-weight: 400;
+        color: hsl(0, 36%, 70%);
+        font-size: 1.8rem;
+        width: 84%;
+
+        
+}
+h1{
+    margin-left: 5.5rem;
+    margin-top: 5rem;
+    font-weight:600 ;
+    font-size: 7rem;
+    text-transform: uppercase;
+    line-height: 8rem;
+    letter-spacing: 1rem;
+    color: hsl(0, 6%, 24%);
+}
+    
+
+.flexa-container{
+    display: flex;
+    flex-direction: row;
+    margin-left: 5.5rem;
+    margin-top: 3rem;
+}
+.input-control input{
+    width: 34rem;
+    height: 4.7rem;
+    border-radius: 2.5rem;
+    border: 2px solid hsl(0, 80%, 86%);
+    display: flex;
+
+}
+
+}
+@media screen and (max-width:717px) {
+    p{
+        margin-left: 3.7rem;
+        line-height: 2.5rem;
+        font-weight: 400;
+        color: hsl(0, 36%, 70%);
+        font-size: 1.8rem;
+        width: 84%;
+
+        
+}
+h1{
+    margin-left: 5.2rem;
+    margin-top: 5rem;
+    font-weight:600 ;
+    font-size: 7rem;
+    text-transform: uppercase;
+    line-height: 8rem;
+    letter-spacing: 1rem;
+    color: hsl(0, 6%, 24%);
+}
+    
+
+.flexa-container{
+    display: flex;
+    flex-direction: row;
+    margin-left: 3.7rem;
+    margin-top: 3rem;
+}
+.input-control input{
+    width: 34rem;
+    height: 4.7rem;
+    border-radius: 2.5rem;
+    border: 2px solid hsl(0, 80%, 86%);
+    display: flex;
+
+}
+}
+
+@media screen and (max-width:711px) {
+    p{
+        margin-left: 3.7rem;
+        line-height: 2.5rem;
+        font-weight: 400;
+        color: hsl(0, 36%, 70%);
+        font-size: 1.8rem;
+        width: 86%;
+
+        
+}
+}
+@media screen and (max-width:696px) {
+    h1{
+        margin-left: 6rem;
+        margin-top: 5rem;
+        font-weight:600 ;
+        font-size: 6rem;
+        text-transform: uppercase;
+        line-height: 8rem;
+        letter-spacing: 1rem;
+        color: hsl(0, 6%, 24%);
+    }
+    p{
+        margin-left: 4rem;
+        line-height: 2.5rem;
+        font-weight: 400;
+        color: hsl(0, 36%, 70%);
+        font-size: 1.8rem;
+        width: 88%;
+
+        
+}
+}
+@media screen and (max-width:686px) {
+    p{
+        margin-left: 4rem;
+        line-height: 2.5rem;
+        font-weight: 400;
+        color: hsl(0, 36%, 70%);
+        font-size: 1.6rem;
+        width: 84%;
+
+        
+}
+    
+}
+
+@media screen and (max-width:657px) {
+    h1{
+        margin-left: 5rem;
+        margin-top: 5rem;
+        font-weight:600 ;
+        font-size: 6rem;
+        text-transform: uppercase;
+        line-height: 8rem;
+        letter-spacing: 1rem;
+        color: hsl(0, 6%, 24%);
+    }
+    p{
+        margin-left: 3rem;
+        line-height: 2.5rem;
+        font-weight: 400;
+        color: hsl(0, 36%, 70%);
+        font-size: 1.7rem;
+        width: 88%;
+
+        
+}
+.flexa-container{
+    display: flex;
+    flex-direction: row;
+    margin-left: 3rem;
+    margin-top: 3rem;
+}
+.input-control input{
+    width: 32rem;
+    height: 4.7rem;
+    border-radius: 2.5rem;
+    border: 2px solid hsl(0, 80%, 86%);
+    display: flex;
+
+}
+    
+}
+    
+@media screen and (max-width:657px) {
+    .imager{
+        position: absolute;
+        top: 79.8rem;
+        left: 28rem;
+        visibility: hidden;
+    
+      }
+    
+}
+@media screen and (max-width:642px) {
+    h1{
+        margin-left: 6rem;
+        margin-top: 5rem;
+        font-weight:600 ;
+        font-size: 5.3rem;
+        text-transform: uppercase;
+        line-height: 8rem;
+        letter-spacing: 1rem;
+        color: hsl(0, 6%, 24%);
+    }
+    p{
+        margin-left: 3.6rem;
+        line-height: 2.5rem;
+        font-weight: 400;
+        color: hsl(0, 36%, 70%);
+        font-size: 1.6rem;
+        width: 88%;
+
+        
+}
+    
+}
+@media screen and (max-width:614px) {
+    p{
+        margin-left: 3rem;
+        line-height: 2.5rem;
+        font-weight: 400;
+        color: hsl(0, 36%, 70%);
+        font-size: 1.6rem;
+        width: 88%;
+
+        
+}
+.input-control input{
+    width: 30rem;
+    height: 4.7rem;
+    border-radius: 2.5rem;
+    border: 2px solid hsl(0, 80%, 86%);
+    display: flex;
+
+}
+.imager{
+    position: absolute;
+    top: 79.8rem;
+    left: 26rem;
+    visibility: hidden;
+
+  }
+    
+}
+
+@media screen and (max-width:603px) {
+    h1{
+        margin-left: 5rem;
+        margin-top: 5rem;
+        font-weight:600 ;
+        font-size: 5.3rem;
+        text-transform: uppercase;
+        line-height: 6rem;
+        letter-spacing: 1rem;
+        color: hsl(0, 6%, 24%);
+    }
+    p{
+        margin-left: 3rem;
+        line-height: 2.5rem;
+        font-weight: 400;
+        color: hsl(0, 36%, 70%);
+        font-size: 1.5rem;
+        width: 88%;    
+}
+.input-control input{
+    width: 30rem;
+    height: 4.7rem;
+    border-radius: 2.5rem;
+    border: 2px solid hsl(0, 80%, 86%);
+    display: flex;
+
+}
+.flexa-container{
+    display: flex;
+    flex-direction: row;
+    margin-left: 3rem;
+    margin-top: 3rem;
+}
+}
+@media screen and (max-width:603px) {
+    .imager{
+        position: absolute;
+        top: 73.8rem;
+        left: 26rem;
+        visibility: hidden;
+    
+      }
+    
+}
+@media screen and (max-width:585px){
+    h1{
+        margin-left: 4.4rem;
+        margin-top: 5rem;
+        font-weight:600 ;
+        font-size: 5.3rem;
+        text-transform: uppercase;
+        line-height: 6rem;
+        letter-spacing: 1rem;
+        color: hsl(0, 6%, 24%);
+    }
+}
+@media screen and (max-width:571px) {
+    p{
+        margin-left: 2.6rem;
+        line-height: 2.5rem;
+        font-weight: 400;
+        color: hsl(0, 36%, 70%);
+        font-size: 1.5rem;
+        width: 89%;    
+    }
+    .flexa-container{
+        display: flex;
+        flex-direction: row;
+        margin-left: 2.6rem;
+        margin-top: 3rem;
+    }
+    .input-control input{
+        width: 28rem;
+        height: 4.7rem;
+        border-radius: 2.5rem;
+        border: 2px solid hsl(0, 80%, 86%);
+        display: flex;
+    
+    }
+    .imager{
+        position: absolute;
+        top: 73.8rem;
+        left: 24rem;
+        visibility: hidden;
+    
+      }
+    
+    
+}
+@media screen and (max-width:561px){
+    h1{
+        margin-left: 4.1rem;
+        margin-top: 5rem;
+        font-weight:600 ;
+        font-size: 5.1rem;
+        text-transform: uppercase;
+        line-height: 6rem;
+        letter-spacing: 1rem;
+        color: hsl(0, 6%, 24%);
+    }
+    p{
+        margin-left: 3rem;
+        line-height: 2.5rem;
+        font-weight: 400;
+        color: hsl(0, 36%, 70%);
+        font-size: 1.4rem;
+        width: 85%;    
+    }
+    .lainch{
+        text-align: center;
+        padding-left: 10rem;
+    }
+
+}
+@media screen and (max-width:551px) {
+    h1{
+        margin-left: 4.1rem;
+        margin-top: 5rem;
+        font-weight:600 ;
+        font-size: 5rem;
+        text-transform: uppercase;
+        line-height: 6rem;
+        letter-spacing: 1rem;
+        color: hsl(0, 6%, 24%);
+    }
+    
+}
+@media screen and (max-width:548px) {
+    p{
+        margin-left: 3rem;
+        line-height: 2.5rem;
+        font-weight: 400;
+        color: hsl(0, 36%, 70%);
+        font-size: 1.4rem;
+        width: 88%;    
+    }
+    .lainch{
+        text-align: center;
+        padding-left: 10rem;
+    }
+}
+@media screen and (max-width:538px) {
+    h1{
+        margin-left: 4.1rem;
+        margin-top: 5rem;
+        font-weight:600 ;
+        font-size: 4.8rem;
+        text-transform: uppercase;
+        line-height: 6rem;
+        letter-spacing: 1rem;
+        color: hsl(0, 6%, 24%);
+    }
+    p{
+        margin-left: 2.6rem;
+        line-height: 2.5rem;
+        font-weight: 400;
+        color: hsl(0, 36%, 70%);
+        font-size: 1.4rem;
+        width: 88%;    
+    }
+    .flexa-container{
+        display: flex;
+        flex-direction: row;
+        margin-left: 2.6rem;
+        margin-top: 3rem;
+    }
+    .input-control input{
+        width: 26rem;
+        height: 4.7rem;
+        border-radius: 2.5rem;
+        border: 2px solid hsl(0, 80%, 86%);
+        display: flex;
+    
+    }
+    .imager{
+        position: absolute;
+        top: 73.8rem;
+        left: 22rem;
+        visibility: hidden;
+    
+      }
+}
+@media screen and (max-width:529px) {
+    p{
+        margin-left: 3.2rem;
+        line-height: 2.5rem;
+        font-weight: 400;
+        color: hsl(0, 36%, 70%);
+        font-size: 1.3rem;
+        width: 86%;    
+    }
+    
+}
+@media screen and (max-width:520px) {
+    h1{
+        margin-left: 4rem;
+        margin-top: 5rem;
+        font-weight:600 ;
+        font-size: 4.5rem;
+        text-transform: uppercase;
+        line-height: 6rem;
+        letter-spacing: 1rem;
+        color: hsl(0, 6%, 24%);
+    }
+    p{
+        margin-left: 3rem;
+        line-height: 2.5rem;
+        font-weight: 400;
+        color: hsl(0, 36%, 70%);
+        font-size: 1.3rem;
+        width: 86%;    
+    }
+}
+@media screen and (max-width:511px) {
+    h1{
+        margin-left: 4rem;
+        margin-top: 5rem;
+        font-weight:600 ;
+        font-size: 4.2rem;
+        text-transform: uppercase;
+        line-height: 5rem;
+        letter-spacing: 1rem;
+        color: hsl(0, 6%, 24%);
+    }
+    p{
+        margin-left: 2.4rem;
+        line-height: 2.5rem;
+        font-weight: 400;
+        color: hsl(0, 36%, 70%);
+        font-size: 1.3rem;
+        width: 86%;    
+    }
+    .input-control input{
+        width: 24rem;
+        height: 4.7rem;
+        border-radius: 2.5rem;
+        border: 2px solid hsl(0, 80%, 86%);
+        display: flex;
+    
+    }
+    .imager{
+        position: absolute;
+        top: 70.8rem;
+        left: 20rem;
+        visibility: hidden;
+    
+      }
+}
+@media screen  and (max-width:502px){
+    p{
+        margin-left: 2.4rem;
+        line-height: 2.5rem;
+        font-weight: 400;
+        color: hsl(0, 36%, 70%);
+        font-size: 1.3rem;
+        width: 88%;    
+    }
+    
+}
+@media screen and (max-width:494px) {
+    h1{
+        margin-left: 4rem;
+        margin-top: 5rem;
+        font-weight:600 ;
+        font-size: 4rem;
+        text-transform: uppercase;
+        line-height: 5rem;
+        letter-spacing: 1rem;
+        color: hsl(0, 6%, 24%);
+    }
+    
+}
+@media screen and (max-width:492px) {
+    p{
+        margin-left: 2.9rem;
+        line-height: 2.5rem;
+        font-weight: 400;
+        color: hsl(0, 36%, 70%);
+        font-size: 1.2rem;
+        width: 86%;    
+    }
+    
+}
+@media  screen and (max-width:476px) {
+    h1{
+        margin-left: 4rem;
+        margin-top: 5rem;
+        font-weight:600 ;
+        font-size: 3.6rem;
+        text-transform: uppercase;
+        line-height: 5rem;
+        letter-spacing: 1rem;
+        color: hsl(0, 6%, 24%);
+    }
+    p{
+        margin-left: 2.6rem;
+        line-height: 2.5rem;
+        font-weight: 400;
+        color: hsl(0, 36%, 70%);
+        font-size: 1.2rem;
+        width: 86%;    
+    }
+    
+    
+    
+}
+
+@media screen and (max-width:466px) {
+    h1{
+        margin-left: 4rem;
+        margin-top: 5rem;
+        font-weight:600 ;
+        font-size: 3.4rem;
+        text-transform: uppercase;
+        line-height: 5rem;
+        letter-spacing: 1rem;
+        color: hsl(0, 6%, 24%);
+    }
+    p{
+        margin-left: 2.4rem;
+        line-height: 2.5rem;
+        font-weight: 400;
+        color: hsl(0, 36%, 70%);
+        font-size: 1.2rem;
+        width: 87%;    
+    }
+    .input-control input{
+        width: 22rem;
+        height: 4.7rem;
+        border-radius: 2.5rem;
+        border: 2px solid hsl(0, 80%, 86%);
+        display: flex;
+    
+    }
+    .imager{
+        position: absolute;
+        top: 70.8rem;
+        left: 18rem;
+        visibility: hidden;
+    
+      }
+    
+}
+@media screen and (max-width:458px) {
+    h1{
+        margin-left: 4rem;
+        margin-top: 5rem;
+        font-weight:600 ;
+        font-size: 3.4rem;
+        text-transform: uppercase;
+        line-height: 4rem;
+        letter-spacing: 1rem;
+        color: hsl(0, 6%, 24%);
+    }
+    p{
+        margin-left: 2.8rem;
+        line-height: 2.2rem;
+        font-weight: 400;
+        color: hsl(0, 36%, 70%);
+        font-size: 1.1rem;
+        width: 85%;    
+    }
+    .imager{
+        position: absolute;
+        top: 61.4rem;
+        left: 18rem;
+        visibility: hidden;
+    
+      }
+    
+    .input-control input{
+        width: 22rem;
+        height: 4.5rem;
+        border-radius: 2.5rem;
+        border: 2px solid hsl(0, 80%, 86%);
+        display: flex;
+    
+    }
+    button{
+        width: 6rem;
+        height: 4.5rem;
+        border-radius: 2.5rem;
+        margin-left: -4.3rem;
+        background-image:linear-gradient(135deg,hsl(0, 80%, 86%),  hsl(0, 74%, 74%));
+       
+        border: none;
+        cursor: pointer;
+        transition-duration: 0.4s;
+        transition-timing-function: ease;
+        margin-bottom: 3rem;
+    
+    
+    }
+    .lainch{
+        text-align: center;
+        padding-left: 9rem;
+    }
+    .div-3{
+        background-image: url(./images/hero-mobile.jpg);
+          width:100%;
+          height: 20rem;
+        background-size: cover;
+        background-position: center center;
+    }
+    .div-4{
+        background-image: none;
+     
+        background-image: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+        height: 33.3rem;
+        width: 100%;
+        background-size: cover;
+    }
+    
+}
+@media screen and (max-width:441px){
+    h1{
+        margin-left: 4rem;
+        margin-top: 5rem;
+        font-weight:600 ;
+        font-size: 3rem;
+        text-transform: uppercase;
+        line-height: 3.7rem;
+        letter-spacing: 1rem;
+        color: hsl(0, 6%, 24%);
+    }  
+
+p{
+    margin-left: 2.5rem;
+    line-height: 2.2rem;
+    font-weight: 400;
+    color: hsl(0, 36%, 70%);
+    font-size: 1.1rem;
+    width: 85%;    
+}  
+.imager{
+    position: absolute;
+    top: 60.8rem;
+    left: 18rem;
+    visibility: hidden;
+
+  }
+
+}
+@media screen and (max-width:431px) {
+    p{
+        margin-left: 2.2rem;
+        line-height: 2.2rem;
+        font-weight: 400;
+        color: hsl(0, 36%, 70%);
+        font-size: 1.1rem;
+        width: 85%;    
+    } 
+    .imager{
+        position: absolute;
+        top: 60.4rem;
+        left: 17rem;
+        visibility: hidden;
+    
+   
+    
+} 
+.input-control input{
+    width: 21rem;
+    height: 4rem;
+    border-radius: 2.5rem;
+    border: 2px solid hsl(0, 80%, 86%);
+    display: flex;
+
+}
+button{
+    width: 6rem;
+    height: 4rem;
+    border-radius: 2.5rem;
+    margin-left: -4.3rem;
+    background-image:linear-gradient(135deg,hsl(0, 80%, 86%),  hsl(0, 74%, 74%));
+   
+    border: none;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    transition-timing-function: ease;
+    margin-bottom: 3rem;   
+}
+}
+@media screen and (max-width:429px) {
+    p{
+        margin-left: 3.3rem;
+        line-height: 2.2rem;
+        font-weight: 400;
+        color: hsl(0, 36%, 70%);
+        font-size: 1rem;
+        width: 80%;    
+    } 
+    .lainch{
+        text-align: center;
+        padding-left: 8rem;
+    }
+}
+@media screen and (max-width:420px) {
+    h1{
+        margin-left: 5rem;
+        margin-top: 5rem;
+        font-weight:600 ;
+        font-size: 3rem;
+        text-transform: uppercase;
+        line-height: 4rem;
+        letter-spacing: 1rem;
+        color: hsl(0, 6%, 24%);
+    }  
+    .color{
+        font-weight: 300;
+        color: hsl(0, 36%, 78%);
+        margin-left: 2rem;
+        
+    }
+    .soon{
+        padding-left: 2rem;
+    }
+    .imagee{
+        margin-left: 3rem;
+        margin-top: 4rem;
+        display: block;
+    }
+    .imager{
+        position: absolute;
+        top: 60.2rem;
+        left: 16rem;
+        visibility: hidden;
+    
+      }
+      .div-2{
+        width: 100%;
+        height: 50%;
+        margin-top: 2rem;
+      
+    }
+    .div-1{
+        width:100%;
+        height: 40%;
+        margin-top: 1rem;
+        
+    }
+    .div-4{
+        background-image: none;
+     
+        background-image: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+        height: 38.2rem;
+        width: 100%;
+        background-size: cover;
+    }
+    p{
+        margin-left: 3.3rem;
+        line-height: 2.2rem;
+        font-weight: 400;
+        color: hsl(0, 36%, 70%);
+        font-size: 1rem;
+        width: 80%;    
+        margin-top: 1rem;
+    } 
+    .input-control input{
+        width: 20rem;
+        height: 4rem;
+        border-radius: 2.5rem;
+        border: 2px solid hsl(0, 80%, 86%);
+        display: flex;
+    
+    }
+    button{
+        width: 6rem;
+        height: 4rem;
+        border-radius: 2.5rem;
+        margin-left: -4.3rem;
+        background-image:linear-gradient(135deg,hsl(0, 80%, 86%),  hsl(0, 74%, 74%));
+       
+        border: none;
+        cursor: pointer;
+        transition-duration: 0.4s;
+        transition-timing-function: ease;
+        margin-bottom: 3rem;   
+    }
+    }
+@media screen and (max-width:419px){
+    h1{
+        margin-left: 4.3rem;
+        margin-top: 5rem;
+        font-weight:600 ;
+        font-size: 3rem;
+        text-transform: uppercase;
+        line-height: 4rem;
+        letter-spacing: 1rem;
+        color: hsl(0, 6%, 24%);
+    }  
+    
+}
+@media screen and (max-width:415px) {
+    p{
+        margin-left: 3.3rem;
+        line-height: 2rem;
+        font-weight: 400;
+        color: hsl(0, 36%, 70%);
+        font-size: 1rem;
+        width: 81%;    
+        margin-top: 1rem;
+    } 
+    .lainch{
+        text-align: center;
+        padding-left: 7rem;
+    }
+    .imager{
+        position: absolute;
+        top: 59.3rem;
+        left: 16rem;
+        visibility: hidden;
+    
+      }
+}
+@media screen and (max-width:410px) {
+    p{
+        margin-left: 3.3rem;
+        line-height: 2rem;
+        font-weight: 400;
+        color: hsl(0, 36%, 70%);
+        font-size: 1rem;
+        width: 82%;    
+        margin-top: 1rem;
+    } 
+    
+}
+
+@media screen and (max-width:406px) {
+    p{
+        margin-left: 2.5rem;
+        line-height: 2rem;
+        font-weight: 400;
+        color: hsl(0, 36%, 70%);
+        font-size: 1rem;
+        width: 84%;    
+        margin-top: 1rem;
+    } 
+    .flexa-container{
+        display: flex;
+        flex-direction: row;
+        margin-left: 2.3rem;
+        margin-top: 3rem;
+    }
+    
+}
+
+@media screen and (max-width:395px) {
+    p{
+        margin-left: 2.5rem;
+        line-height: 2rem;
+        font-weight: 400;
+        color: hsl(0, 36%, 70%);
+        font-size: 1rem;
+        width: 86%;    
+        margin-top: 1rem;
+    } 
+    .flexa-container{
+        display: flex;
+        flex-direction: row;
+        margin-left: 2.3rem;
+        margin-top: 3rem;
+    }
+    h1{
+        margin-left: 4rem;
+        margin-top: 5rem;
+        font-weight:600 ;
+        font-size: 3rem;
+        text-transform: uppercase;
+        line-height: 4rem;
+        letter-spacing: 1rem;
+        color: hsl(0, 6%, 24%);
+    }  
+}
+@media screen and (max-width:388px) {
+    p{
+        margin-left: 2.1rem;
+        line-height: 2rem;
+        font-weight: 400;
+        color: hsl(0, 36%, 70%);
+        font-size: 1rem;
+        width: 86%;    
+        margin-top: 1rem;
+    } 
+    .flexa-container{
+        display: flex;
+        flex-direction: row;
+        margin-left: 1.5rem;
+        margin-top: 3rem;
+    }
+    .imager{
+        position: absolute;
+        top: 59.3rem;
+        left: 15rem;
+        visibility: hidden;
+    
+      }
+      h1{
+        margin-left: 3.5rem;
+        margin-top: 5rem;
+        font-weight:600 ;
+        font-size: 2.8rem;
+        text-transform: uppercase;
+        line-height: 4rem;
+        letter-spacing: 1rem;
+        color: hsl(0, 6%, 24%);
+    }  
+
+    
+}
+@media screen and (max-width:386px)  {
+    p{
+        margin-left: 2rem;
+        line-height: 2rem;
+        font-weight: 400;
+        color: hsl(0, 36%, 70%);
+        font-size: 1rem;
+        width: 88%;    
+        margin-top: 1rem;
+    } 
+    
+}
+@media screen and (max-width:379px) {
+    p{
+        margin-left: 1.8rem;
+        line-height: 2rem;
+        font-weight: 400;
+        color: hsl(0, 36%, 70%);
+        font-size: 1rem;
+        width: 88%;    
+        margin-top: 1rem;
+    } 
+    h1{
+        margin-left: 3.2rem;
+        margin-top: 5rem;
+        font-weight:600 ;
+        font-size: 2.8rem;
+        text-transform: uppercase;
+        line-height: 4rem;
+        letter-spacing: 1rem;
+        color: hsl(0, 6%, 24%);
+    }  
+    
+}
+@media screen and (max-width:376px) {
+    p{
+        margin-left: 1.7rem;
+        line-height: 2rem;
+        font-weight: 400;
+        color: hsl(0, 36%, 70%);
+        font-size: 1rem;
+        width: 89%;    
+        margin-top: 1rem;
+    } 
+    h1{
+        margin-left: 3.2rem;
+        margin-top: 5rem;
+        font-weight:600 ;
+        font-size: 2.8rem;
+        text-transform: uppercase;
+        line-height: 4rem;
+        letter-spacing: 1rem;
+        color: hsl(0, 6%, 24%);
+    }  
+    
+}
